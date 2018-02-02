@@ -60,7 +60,7 @@ Following [Bello & al., 2016], our Neural Network overall parameterizes a stocha
   The output of our encoder is a set of reference vectors ref = (enc1, ..., encn), each representing a city interacting with other cities. <br/><br/>
 
 ### Neural Decoder
-  <img align="left" img src="./GitImg/Decoder.png" height="150">
+  <img align="left" img src="./GitImg/Decoder.png" height="120">
 
   Similar to [Bello & al., 2016], our Neural Decoder uses a Pointer (cite paper) to effectively point to a city given a trajectory. Our   model however explicity forgets after K steps, dispensing with LSTM networks. <br/><br/>
 
