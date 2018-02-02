@@ -62,7 +62,7 @@ Following [Bello & al., 2016], our Neural Network overall parameterizes a stocha
 ### Neural Decoder
   <img align="left" img src="./GitImg/Decoder.png" height="120">
 
-  Similar to [Bello & al., 2016], our Neural Decoder uses a Pointer (cite paper) to effectively point to a city given a trajectory. Our   model however explicity forgets after K steps, dispensing with LSTM networks. <br/><br/>
+  Similar to [Bello & al., 2016], our Neural Decoder uses a Pointer (cite paper) to effectively point to a city given a trajectory. Our   model however explicity forgets after K steps, dispensing with LSTM networks. <br/><br/><br/>
 
 ### Local Search
 We use a simple 2-OPT post-processing to clean best sampled tours during test time.
