@@ -37,7 +37,7 @@ Can we learn data-driven heuristics, competitive with existing man-engineered he
 ## What is Deep Reinforcement Learning ?
 
 
-<img align="left" img src="./GitImg/MDP.png" height="200">
+<img align="left" img src="./GitImg/MDP.png" height="210">
 
 * __Reinforcement Learning__: A general purpose framework for Decision Making in a scenario where a learner actively interacts with an environment to achieve a certain goal.
 * __Deep Learning__: A general purpose framework for Representation Learning
