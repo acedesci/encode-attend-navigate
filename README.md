@@ -2,7 +2,7 @@
 
 ## Overview
 
-<img align="left" img src="./GitImg/Brain.png" width="120">
+<img align="left" img src="./GitImg/Brain.png" width="75">
 
 Tensorflow implementation of "Learning Heuristics for the TSP by Policy Gradient". <br/>
 [Michel Deudon, Pierre Cournut, Alexandre Lacoste, Yossiri Adulyasak, Louis-Martin Rousseau].
