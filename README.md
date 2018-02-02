@@ -2,7 +2,7 @@
 
 ## Overview
 
-<img align="right" img src="./GitImg/Brain.png" width="150">
+<img align="left" img src="./GitImg/Brain.png" width="120">
 
 Tensorflow implementation of "Learning Heuristics for the TSP by Policy Gradient". <br/>
 [Michel Deudon, Pierre Cournut, Alexandre Lacoste, Yossiri Adulyasak, Louis-Martin Rousseau].
@@ -29,7 +29,7 @@ Tensorflow implementation of "Learning Heuristics for the TSP by Policy Gradient
 ![comic](./GitImg/Comic.png)
 
 * __Combinatorial Optimization__: A topic that consists of finding an optimal object from a finite set of objects.
-* Sequencing problems: The best order for performing a set of tasks must be determined.
+* __Sequencing problems__: The best order for performing a set of tasks must be determined.
 * Applications: Manufacturing, routing, astrology, genetics...
 
 Can we learn data-driven heuristics, competitive with existing man-engineered heuristics ?
@@ -37,10 +37,10 @@ Can we learn data-driven heuristics, competitive with existing man-engineered he
 ## What is Deep Reinforcement Learning ?
 
 
-<img align="left" img src="./GitImg/MDP.png" width="200">
+<img align="left" img src="./GitImg/MDP.png" width="250">
 
-* Reinforcement Learning: A general purpose framework for Decision Making in a scenario where a learner actively interacts with an environment to achieve a certain goal.
-* Deep Learning: A general purpose framework for Representation Learning
+* __Reinforcement Learning__: A general purpose framework for Decision Making in a scenario where a learner actively interacts with an environment to achieve a certain goal.
+* __Deep Learning__: A general purpose framework for Representation Learning
 * Successful applications: Playing games, navigating worlds, controlling physical systems and interacting with users.
 
 ## Related Work
@@ -53,7 +53,7 @@ Following [Bello & al., 2016], our Neural Network overall parameterizes a stocha
 
 ### Neural Encoder
 
-![encoder](./GitImg/Encoder.png)
+<img align="left" img src="./GitImg/Encoder.png" width="250">
 
 Our neural encoder takes inspiration from advances in Neural Machine Translation (cite self attentive...)
 The purpose of our encoder is to obtain a representation for each action (city) given its context.
