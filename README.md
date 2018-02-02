@@ -37,7 +37,7 @@ Can we learn data-driven heuristics, competitive with existing man-engineered he
 ## What is Deep Reinforcement Learning ?
 
 
-<img align="left" img src="./GitImg/MDP.png" width="150">
+<img align="left" img src="./GitImg/MDP.png" height="150">
 
 * __Reinforcement Learning__: A general purpose framework for Decision Making in a scenario where a learner actively interacts with an environment to achieve a certain goal.
 * __Deep Learning__: A general purpose framework for Representation Learning
@@ -53,7 +53,7 @@ Following [Bello & al., 2016], our Neural Network overall parameterizes a stocha
 
 ### Neural Encoder
 
-<img align="left" img src="./GitImg/Encoder.png" width="250">
+<img align="left" img src="./GitImg/Encoder.png" height="250">
 
 Our neural encoder takes inspiration from advances in Neural Machine Translation (cite self attentive...)
 The purpose of our encoder is to obtain a representation for each action (city) given its context.
