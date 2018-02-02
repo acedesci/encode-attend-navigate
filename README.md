@@ -53,16 +53,16 @@ Following [Bello & al., 2016], our Neural Network overall parameterizes a stocha
 
 ### Neural Encoder
 
-<img align="left" img src="./GitImg/Encoder.png" height="180">
+<img align="left" img src="./GitImg/Encoder.png" height="150">
 
 Our neural encoder takes inspiration from advances in Neural Machine Translation (cite self attentive...)
 The purpose of our encoder is to obtain a representation for each action (city) given its context.
 
-consists in a RNN or self attentive encoder-decoder with an attention module connecting the decoder to the encoder (via a "pointer"). 
+The output of our encoder is a set of reference vectors ref = (enc1, ..., encn), each representing a city interacting with other cities.
 
 ### Neural Decoder
 
-<img align="left" img src="./GitImg/Decoder.png" height="200">
+<img align="left" img src="./GitImg/Decoder.png" height="150">
 
 Similar to [Bello & al., 2016], our Neural Decoder uses a Pointer (cite paper) to effectively point to a city given a trajectory. Our model however explicity forgets after K steps, dispensing with LSTM networks.
 
