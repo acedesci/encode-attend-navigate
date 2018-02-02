@@ -72,25 +72,19 @@ One contribution we would like to emphasize here is that simple heuristics can b
 
 We evaluate on TSP100 our model pre-trained on TSP50 and the results show that that it performs relatively well even though the model was not trained directly on the same instance size as in [Bello & al, 2016](http://arxiv.org/abs/1611.09940). 
 
-## Acknowledgments (ref links)
+## Acknowledgments
 
-- [Ecole Polytechnique] (l'X), [Polytechnique Montreal] and [CIRRELT] for financial & logistic support <br/>
-- [Element AI] for hosting weekly meetings <br/>
-- [Compute Canada] & [Télécom Paris-Tech] for computational resources <br/>
+- [Ecole Polytechnique](http://www.polytechnique.edu/), [Polytechnique Montreal](http://www.polymtl.ca/) and [CIRRELT](https://www.cirrelt.ca/) for financial & logistic support <br/>
+- [Element AI](https://www.elementai.com/) for hosting weekly meetings <br/>
+- [Compute Canada](https://www.computecanada.ca/), [Calcul Québec](http://www.calculquebec.ca/) & [Télécom Paris-Tech](https://www.telecom-paristech.org/) for computational resources <br/>
 
-Special thanks (sorted by name): <br/>
-- Pr. [Alessandro Lazaric] (SequeL Team, INRIA Lille) <br/>
-- Dr. [Alexandre Lacoste] (Element AI) <br/>
-- Pr. [Claudia D'Ambrosio] (CNRS, LIX) <br/>
-- [Diane Bernier <br/>
-- Dr. [Khalid Laaziri] <br/>
-- Pr. [Leo Liberti] (CNRS, LIX) <br/>
-- Pr. [Louis-Martin Rousseau] (Polytechnique Montreal) <br/>
-- [Magdalena Fuentes] (Télécom Paris-Tech) <br/>
-- [Mehdi Taobane] <br/>
-- [Pierre Cournut] (Ecole Polytechnique) <br/>
-- [Pr. Yossiri Adulyasak] (HEC Montreal) <br/>
-
+Special thanks (chronological order): <br/>
+- Pr. [Louis-Martin Rousseau](http://hanalog.polymtl.ca/person/louis-martin-rousseau/) (Polytechnique Montreal), [Pr. Yossiri Adulyasak](http://www.yossiri.info/) (HEC Montreal) and Dr. [Alexandre Lacoste](https://twitter.com/recursix) (Element AI) who supervised this work and with who I had useful discussions and pleasant times <br/>
+- Dr. [Khalid Laaziri](https://www.gerad.ca/fr/people/khalid-laaziri), [Mehdi Taobane](http://cerc-datascience.polymtl.ca/person/mehdi-taobane/), Diane Bernier as well as MSc and PhD students from the "Pavillon André-Aisenstadt" for their kindness and support. <br/>
+- [Pierre Cournut](https://www.linkedin.com/in/pierre-cournut) (Ecole Polytechnique, KTH) with who I worked on the project. <br/>
+- Pr. [Claudia D'Ambrosio](https://www.lix.polytechnique.fr/~dambrosio/) (CNRS, LIX) and Pr. [Leo Liberti](https://www.lix.polytechnique.fr/~liberti/) for their feedback on the project. <br/>
+- Pr. [Alessandro Lazaric](http://chercheurs.lille.inria.fr/~lazaric/Webpage/Home/Home.html) and Pr. [Alessandro Lazaric]http://teopir.github.io/) ([SequeL Team](https://team.inria.fr/sequel/), [INRIA Lille](https://www.inria.fr/centre/lille)) for giving a course on Reinforcement Learning at ENS Cachan (Master2 [Mathématiques, Vision, Apprentissage](http://math.ens-paris-saclay.fr/version-francaise/formations/master-mva/)) <br/>
+- Magdalena Fuentes (Télécom Paris-Tech) for helping with Télécom's GPU support and setting up the required environment. <br/>
 
 ## Author
 Michel Deudon / [@mdeudon](https://github.com/MichelDeudon)
