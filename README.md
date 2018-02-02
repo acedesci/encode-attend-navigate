@@ -70,11 +70,9 @@ One contribution we would like to emphasize here is that simple heuristics can b
 
 ## Results
 
-![results](./GitImg/Results.png)
-
 ![tsp100](./GitImg/TSP100.png)
 
-We evaluate on TSP100 our model pre-trained on TSP50 and the results show that that it performs relatively well even though the model was not trained directly on the same instance size as in [Bello & al, 2016]. We believe that the Markov assumption (see Decoder) helps generalizing the model.
+We evaluate on TSP100 our model pre-trained on TSP50 and the results show that that it performs relatively well even though the model was not trained directly on the same instance size as in [Bello & al, 2016]. 
 
 ## Acknowledgments
 [add links]
