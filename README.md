@@ -2,7 +2,7 @@
 
 ## Overview
 
-[Image Brain]
+![brain](./GitImg/Brain.png)
 
 Tensorflow implementation of "Learning Heuristics for the TSP by Policy Gradient" [Michel Deudon, Pierre Cournut, Alexandre Lacoste, Yossiri Adulyasak, Louis-Martin Rousseau].
 
@@ -25,7 +25,7 @@ Tensorflow implementation of "Learning Heuristics for the TSP by Policy Gradient
 
 ## What is Combinatorial Optimization ?
 
-[Comic TSP]
+![comic](./GitImg/Comic.png)
 
 * Combinatorial Optimization: A topic that consists of finding an optimal object from a finite set of objects.
 * Sequencing problems: The best order for performing a set of tasks must be determined.
@@ -35,7 +35,7 @@ Can we learn data-driven heuristics competitive with existing man-engineered heu
 
 ## What is Deep Reinforcement Learning ?
 
-[Markow Decision Process]
+![MarkovDecisionProcess](./GitImg/MDP.png)
 
 * Reinforcement Learning: A general purpose framework for Decision Making in a scenario where a learner actively interacts with an environment to achieve a certain goal.
 * Deep Learning: A general purpose framework for Representation Learning
@@ -51,7 +51,7 @@ Following [Bello & al., 2016], our Neural Network overall parameterizes a stocha
 
 ### Neural Encoder
 
-[Encoder]
+![encoder](./GitImg/Encoder.png)
 
 Our neural encoder takes inspiration from advances in Neural Machine Translation (cite self attentive...)
 The purpose of our encoder is to obtain a representation for each action (city) given its context.
@@ -60,7 +60,7 @@ consists in a RNN or self attentive encoder-decoder with an attention module con
 
 ### Neural Decoder
 
-[Decoder]
+![decoder](./GitImg/Decoder.png)
 
 Similar to [Bello & al., 2016], our Neural Decoder uses a Pointer (cite paper) to effectively point to a city given a trajectory. Our model however explicity forgets after K steps, dispensing with LSTM networks.
 
@@ -70,9 +70,9 @@ One contribution we would like to emphasize here is that simple heuristics can b
 
 ## Results
 
-[quantitative]
+![results](./GitImg/Results.png)
 
-[qualitative]
+![tsp100](./GitImg/TSP100.png)
 
 We evaluate on TSP100 our model pre-trained on TSP50 and the results show that that it performs relatively well even though the model was not trained directly on the same instance size as in [Bello & al, 2016]. We believe that the Markov assumption (see Decoder) helps generalizing the model.
 
