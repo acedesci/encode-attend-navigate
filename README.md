@@ -52,21 +52,17 @@ Our work draws inspiration from [Neural Combinatorial Optimization with Reinforc
 Following [Bello & al., 2016], our Neural Network overall parameterizes a stochastic policy over city permutations. Our model is trained by Policy Gradient ([Reinforce](https://link.springer.com/article/10.1007/BF00992696), 1992) to learn to assign high probability to "good tours", and low probability to "undesirable tours".
 
 ### Neural Encoder
-<p> 
   <img align="left" img src="./GitImg/Encoder.png" height="150">
 
   Our neural encoder takes inspiration from advances in Neural Machine Translation (cite self attentive...)
   The purpose of our encoder is to obtain a representation for each action (city) given its context.
 
-  The output of our encoder is a set of reference vectors ref = (enc1, ..., encn), each representing a city interacting with other cities.
-</p>
+  The output of our encoder is a set of reference vectors ref = (enc1, ..., encn), each representing a city interacting with other cities. <br/><br/>
 
 ### Neural Decoder
-<p> 
   <img align="left" img src="./GitImg/Decoder.png" height="150">
 
-  Similar to [Bello & al., 2016], our Neural Decoder uses a Pointer (cite paper) to effectively point to a city given a trajectory. Our   model however explicity forgets after K steps, dispensing with LSTM networks.
-</p>
+  Similar to [Bello & al., 2016], our Neural Decoder uses a Pointer (cite paper) to effectively point to a city given a trajectory. Our   model however explicity forgets after K steps, dispensing with LSTM networks. <br/><br/>
 
 ### Local Search
 We use a simple 2-OPT post-processing to clean best sampled tours during test time.
