@@ -28,8 +28,7 @@ Tensorflow implementation of "Learning Heuristics for the TSP by Policy Gradient
 
 ![comic](./GitImg/Comic.png)
 
-<span style="color:blue">some *blue* text</span>.
-* Combinatorial Optimization: A topic that consists of finding an optimal object from a finite set of objects.
+* __Combinatorial Optimization__: A topic that consists of finding an optimal object from a finite set of objects.
 * Sequencing problems: The best order for performing a set of tasks must be determined.
 * Applications: Manufacturing, routing, astrology, genetics...
 
