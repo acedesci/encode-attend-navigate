@@ -16,9 +16,8 @@ Tensorflow implementation of "Learning Heuristics for the TSP by Policy Gradient
 
 - To train a model from scratch (data is generated on the fly):
 
-Run blocks 1.DataGenerator, 2.Config, 3.Model and 4.Train with the Jupyter Notebook (Neural_Reinforce.ipynb)
-You could change parameters in the block 2.Config (batch size, max length, nb training steps...)
-Default parameters should replicate results reported in our paper (2D TSP50).
+Run blocks 1.DataGenerator, 2.Config, 3.Model and 4.Train with the Jupyter Notebook (Neural_Reinforce.ipynb).
+You could change parameters in the Config block. Default parameters should replicate results reported in our paper (2D TSP50).
 
 - If training is successful, the model will be saved in a "save" folder (file name depends on config) and training statistics will be reported in a "summary" folder.
 
