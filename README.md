@@ -2,8 +2,6 @@
 
 ## Overview
 
-<img align="left" img src="./GitImg/Brain.png" width="75">
-
 Tensorflow implementation of "Learning Heuristics for the TSP by Policy Gradient". <br/>
 [Michel Deudon, Pierre Cournut, Alexandre Lacoste, Yossiri Adulyasak, Louis-Martin Rousseau].
 
@@ -75,23 +73,23 @@ One contribution we would like to emphasize here is that simple heuristics can b
 We evaluate on TSP100 our model pre-trained on TSP50 and the results show that that it performs relatively well even though the model was not trained directly on the same instance size as in [Bello & al, 2016](http://arxiv.org/abs/1611.09940). 
 
 ## Acknowledgments (ref links)
-I would like to thank: <br/>
-- Ecole Polytechnique (l'X), Polytechnique Montreal and CIRRELT for financial & logistic support <br/>
-- Element AI for hosting weekly meetings <br/>
-- Compute Canada & Télécom Paris-Tech for computational resources <br/>
+
+- [Ecole Polytechnique] (l'X), [Polytechnique Montreal] and [CIRRELT] for financial & logistic support <br/>
+- [Element AI] for hosting weekly meetings <br/>
+- [Compute Canada] & [Télécom Paris-Tech] for computational resources <br/>
 
 Special thanks (sorted by name): <br/>
-- Pr. Alessandro Lazaric (SequeL Team, INRIA Lille) <br/>
-- Dr. Alexandre Lacoste (Element AI) <br/>
-- Pr. Claudia D'Ambrosio (CNRS, LIX) <br/>
-- Diane Bernier <br/>
-- Dr. Khalid Laaziri <br/>
-- Pr. Leo Liberti (CNRS, LIX) <br/>
-- Pr. Louis-Martin Rousseau (Polytechnique Montreal) <br/>
-- Magdalena Fuentes (Télécom Paris-Tech) <br/>
-- Mehdi Taobane <br/>
-- Pierre Cournut (Ecole Polytechnique) <br/>
-- Pr. Yossiri Adulyasak (HEC Montreal) <br/>
+- Pr. [Alessandro Lazaric] (SequeL Team, INRIA Lille) <br/>
+- Dr. [Alexandre Lacoste] (Element AI) <br/>
+- Pr. [Claudia D'Ambrosio] (CNRS, LIX) <br/>
+- [Diane Bernier <br/>
+- Dr. [Khalid Laaziri] <br/>
+- Pr. [Leo Liberti] (CNRS, LIX) <br/>
+- Pr. [Louis-Martin Rousseau] (Polytechnique Montreal) <br/>
+- [Magdalena Fuentes] (Télécom Paris-Tech) <br/>
+- [Mehdi Taobane] <br/>
+- [Pierre Cournut] (Ecole Polytechnique) <br/>
+- [Pr. Yossiri Adulyasak] (HEC Montreal) <br/>
 
 
 ## Author
