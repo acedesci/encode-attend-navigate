@@ -30,7 +30,7 @@ Tensorflow implementation of "Learning Heuristics for the TSP by Policy Gradient
 
 * __Combinatorial Optimization__: A topic that consists of finding an optimal object from a finite set of objects.
 * __Sequencing problems__: The best order for performing a set of tasks must be determined.
-* Applications: Manufacturing, routing, astrology, genetics...
+* __Applications__: Manufacturing, routing, astrology, genetics...
 
 Can we learn data-driven heuristics, competitive with existing man-engineered heuristics ?
 
@@ -41,7 +41,7 @@ Can we learn data-driven heuristics, competitive with existing man-engineered he
 
 * __Reinforcement Learning__: A general purpose framework for Decision Making in a scenario where a learner actively interacts with an environment to achieve a certain goal.
 * __Deep Learning__: A general purpose framework for Representation Learning
-* Successful applications: Playing games, navigating worlds, controlling physical systems and interacting with users.
+* __Successful applications__: Playing games, navigating worlds, controlling physical systems and interacting with users.
 
 ## Related Work
 
