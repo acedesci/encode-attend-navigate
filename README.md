@@ -1,25 +1,18 @@
-# Neural Combinatorial Optimization with RL
+# Encode Attend Navigate
 
-TensorFlow implementation and extension of [Neural Combinatorial Optimization with Reinforcement Learning](http://arxiv.org/abs/1611.09940) for the Traveling Salesman Problem (TSP) and the TSP with Time Windows (TSP-TW)
+## Overview
 
-![model](./Img/Pointer_Net.png)
+[Image Brain]
 
-The Neural Network consists in a RNN or self attentive encoder-decoder with an attention module connecting the decoder to the encoder (via a "pointer"). The model is trained by Policy Gradient ([Reinforce](https://link.springer.com/article/10.1007/BF00992696), 1992).
+Tensorflow implementation of "Learning Heuristics for the TSP by Policy Gradient" [Michel Deudon, Pierre Cournut, Alexandre Lacoste, Yossiri Adulyasak, Louis-Martin Rousseau].
 
 ## Requirements
 
-- Python 2.7 or 3.5
-- [TensorFlow 1.0.1](https://www.tensorflow.org/install/)
+- [Python 3.5]()
+- [TensorFlow 1.3.0+](https://www.tensorflow.org/install/)
 - [tqdm](https://pypi.python.org/pypi/tqdm)
-- [Google OR tools](https://developers.google.com/optimization/) - optional reference solver (main.py, dataset.py)
-
-## Architecture
-
-(under progress)
 
 ## Usage
-
-### TSP
 
 - To train a (2D TSP20) model from scratch (data is generated on the fly):
 ```
@@ -38,58 +31,79 @@ NB: Just make sure ./save/20/model exists (create folder otherwise)
 > python main.py --max_length=20 --inference_mode=True --restore_model=True --restore_from=20/model
 ```
 
-### TSP-TW
+## What is Combinatorial Optimization ?
 
-- To pretrain a (2D TSPTW20) model with infinite travel speed from scratch:
-```
-> python main.py --inference_mode=False --pretrain=True --restore_model=False --speed=1000. --beta=3  --save_to=speed1000/n20w100 --log_dir=summary/speed1000/n20w100
-```
+[Comic TSP]
 
+* Combinatorial Optimization: A topic that consists of finding an optimal object from a finite set of objects.
+* Sequencing problems: The best order for performing a set of tasks must be determined.
+* Applications: Manufacturing, routing, astrology, genetics...
 
-- To fine tune a (2D TSPTW20) model with finite travel speed:
-```
-> python main.py --inference_mode=False --pretrain=False --kNN=5 --restore_model=True --restore_from=speed1000/n20w100 --speed=10.0 --beta=3 --save_to=speed10/s10_k5_n20w100 --log_dir=summary/speed10/s10_k5_n20w100
-```
+Can we learn data-driven heuristics competitive with existing man-engineered heuristic ?
 
-NB: Just make sure save_to folders exist
+## What is Deep Reinforcement Learning ?
 
-- To visualize training on tensorboard:
-```
-> tensorboard --logdir=summary/speed1000/n20w100
-```
-```
-> tensorboard --logdir=summary/speed10/s10_k5_n20w100
-```
+[Markow Decision Process]
 
-- To test a trained model with finite travel speed on Dumas instances (in the benchmark folder):
-```
-> python main.py --inference_mode=True --restore_model=True --restore_from=speed10/s10_k5_n20w100 --speed=10.0
-```
+* Reinforcement Learning: A general purpose framework for Decision Making in a scenario where a learner actively interacts with an environment to achieve a certain goal.
+* Deep Learning: A general purpose framework for Representation Learning
+* Successful applications: Playing games, navigating worlds, controlling physical systems and interacting with users.
 
+## Related Work
+
+Our work draws inspiration from [Neural Combinatorial Optimization with Reinforcement Learning](http://arxiv.org/abs/1611.09940) to solve the Euclidean TSP. Our framework gets a 5x speedup compared to the original framework, while achieving similar results in terms of optimality.
+
+## Architecture
+
+Following [Bello & al., 2016], our Neural Network overall parameterizes a stochastic policy over city permutations. Our model is trained by Policy Gradient ([Reinforce](https://link.springer.com/article/10.1007/BF00992696), 1992) to learn to assign high probability to "good tours", and low probability to "undesirable tours".
+
+### Neural Encoder
+
+[Encoder]
+
+Our neural encoder takes inspiration from advances in Neural Machine Translation (cite self attentive...)
+The purpose of our encoder is to obtain a representation for each action (city) given its context.
+
+consists in a RNN or self attentive encoder-decoder with an attention module connecting the decoder to the encoder (via a "pointer"). 
+
+### Neural Decoder
+
+[Decoder]
+
+Similar to [Bello & al., 2016], our Neural Decoder uses a Pointer (cite paper) to effectively point to a city given a trajectory. Our model however explicity forgets after K steps, dispensing with LSTM networks.
+
+### Local Search
+We use a simple 2-OPT post-processing to clean best sampled tours during test time.
+One contribution we would like to emphasize here is that simple heuristics can be used in conjunction with Deep Reinforcement Learning, shedding light on interesting hybridization between Artificial Intelligence (AI) & Operations Research (OR).
 
 ## Results
 
-### TSP
+[quantitative]
 
-Sampling 128 permutations with the Self-Attentive Encoder + Pointer Decoder:
+[qualitative]
 
-- Comparison to Google OR tools on 1000 TSP20 instances: (predicted tour length) = 0.9983 * (target tour length)
+We evaluate on TSP100 our model pre-trained on TSP50 and the results show that that it performs relatively well even though the model was not trained directly on the same instance size as in [Bello & al, 2016]. We believe that the Markov assumption (see Decoder) helps generalizing the model.
 
-![Self_Net_TSP20](./Img/Self_Net_TSP20.1_AC_0.9983.png)
+## Acknowledgments
+[add links]
 
-### TSP-TW
+Ecole Polytechnique (l'X), Polytechnique Montreal and CIRRELT for financial & logistic support
+Element AI for hosting weekly meetings
+Compute Canada & Télécom Paris-Tech for computational resources.
 
-Sampling 256 permutations with the RNN Encoder + Pointer Decoder, followed by a 2-opt post processing on best tour:
-- Dumas instance n20w100.001
-![tsptw1](./Img/n20w100.1_ptr2.png)
-- Dumas instance n20w100.003
-![tsptw2](./Img/n20w100.3_ptr2.png)
+Special thanks (sorted by name)
+Pr. Alessandro Lazaric (SequeL Team, INRIA Lille)
+Dr. Alexandre Lacoste (Element AI)
+Pr. Claudia D'Ambrosio (CNRS, LIX)
+Diane Bernier
+Dr. Khalid Laaziri
+Pr. Leo Liberti (CNRS, LIX)
+Pr. Louis-Martin Rousseau (Polytechnique Montreal)
+Magdalena Fuentes (Télécom Paris-Tech)
+Mehdi Taobane
+Pierre Cournut (Ecole Polytechnique)
+Pr. Yossiri Adulyasak (HEC Montreal)
 
-## Authors
 
+## Author
 Michel Deudon / [@mdeudon](https://github.com/MichelDeudon)
-
-Pierre Cournut / [@pcournut](https://github.com/pcournut)
-
-## References
-Bello, I., Pham, H., Le, Q. V., Norouzi, M., & Bengio, S. (2016). [Neural combinatorial optimization with reinforcement learning](https://arxiv.org/abs/1611.09940). arXiv preprint arXiv:1611.09940.
