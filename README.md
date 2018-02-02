@@ -14,22 +14,22 @@ Tensorflow implementation of "Learning Heuristics for the TSP by Policy Gradient
 
 ## Usage
 
-- To train a (2D TSP20) model from scratch (data is generated on the fly):
-```
-> python main.py --max_length=20 --inference_mode=False --restore_model=False --save_to=20/model --log_dir=summary/20/repo
-```
+- To train a model from scratch (data is generated on the fly):
 
-NB: Just make sure ./save/20/model exists (create folder otherwise)
+Run blocks 1.DataGenerator, 2.Config, 3.Model and 4.Train with the Jupyter Notebook (Neural_Reinforce.ipynb)
+You could change parameters in the block 2.Config (batch size, max length, nb training steps...)
+Default parameters should replicate results reported in our paper (2D TSP50).
 
-- To visualize training on tensorboard:
+- If training is successful, the model will be saved in a "save" folder (file name depends on config) and training statistics will be reported in a "summary" folder.
+
+To visualize training on tensorboard, run:
 ```
-> tensorboard --logdir=summary/20/repo
+> tensorboard --logdir=summary
 ```
 
 - To test a trained model:
-```
-> python main.py --max_length=20 --inference_mode=True --restore_model=True --restore_from=20/model
-```
+
+Run block 5.Test with the Jupyter Notebook (Neural_Reinforce.ipynb)
 
 ## What is Combinatorial Optimization ?
 
