@@ -37,7 +37,7 @@ Can we learn data-driven heuristics, competitive with existing man-engineered he
 ## What is Deep Reinforcement Learning ?
 
 
-<img align="left" img src="./GitImg/MDP.png" height="150">
+<img align="left" img src="./GitImg/MDP.png" height="180">
 
 * __Reinforcement Learning__: A general purpose framework for Decision Making in a scenario where a learner actively interacts with an environment to achieve a certain goal.
 * __Deep Learning__: A general purpose framework for Representation Learning
@@ -53,7 +53,7 @@ Following [Bello & al., 2016], our Neural Network overall parameterizes a stocha
 
 ### Neural Encoder
 
-<img align="left" img src="./GitImg/Encoder.png" height="250">
+<img align="left" img src="./GitImg/Encoder.png" height="200">
 
 Our neural encoder takes inspiration from advances in Neural Machine Translation (cite self attentive...)
 The purpose of our encoder is to obtain a representation for each action (city) given its context.
@@ -62,7 +62,7 @@ consists in a RNN or self attentive encoder-decoder with an attention module con
 
 ### Neural Decoder
 
-![decoder](./GitImg/Decoder.png)
+<img align="right" img src="./GitImg/Decoder.png" height="200">
 
 Similar to [Bello & al., 2016], our Neural Decoder uses a Pointer (cite paper) to effectively point to a city given a trajectory. Our model however explicity forgets after K steps, dispensing with LSTM networks.
 
