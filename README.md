@@ -9,20 +9,20 @@ Tensorflow implementation of "Learning Heuristics for the TSP by Policy Gradient
 
 ## Requirements
 
-- [Python 3.5+]()
+- [Python 3.5+](https://anaconda.org/anaconda/python)
 - [TensorFlow 1.3.0+](https://www.tensorflow.org/install/)
 - [Tqdm](https://pypi.python.org/pypi/tqdm)
 
 ## Usage
 
-- To train a model from scratch (data is generated on the fly), run blocks 1.DataGenerator, 2.Config, 3.Model and 4.Train with the Jupyter Notebook (Neural_Reinforce.ipynb). You could change parameters in the Config block. Default parameters should replicate results reported in our paper (2D TSP50).
+- To train a model from scratch (data is generated on the fly), run blocks 1.DataGenerator, 2.Config, 3.Model and 4.Train with the Jupyter Notebook (Neural_Reinforce.ipynb). You can change parameters in the Config block. Default parameters should replicate results reported in our paper (2D TSP50).
 
-- If training is successful, the model will be saved in a "save" folder (file name depends on config) and training statistics will be reported in a "summary" folder. To visualize training on tensorboard, run:
+- If training is successful, the model will be saved in a "save" folder (filename depends on config) and training statistics will be reported in a "summary" folder. To visualize training on tensorboard, run:
 ```
 > tensorboard --logdir=summary
 ```
 
-- To test a trained model, run block 5.Test with the Jupyter Notebook (Neural_Reinforce.ipynb)
+- To test a trained model, run block 5.Test with the Jupyter Notebook (Neural_Reinforce.ipynb).
 
 ## What is Combinatorial Optimization ?
 
@@ -32,11 +32,12 @@ Tensorflow implementation of "Learning Heuristics for the TSP by Policy Gradient
 * Sequencing problems: The best order for performing a set of tasks must be determined.
 * Applications: Manufacturing, routing, astrology, genetics...
 
-Can we learn data-driven heuristics competitive with existing man-engineered heuristic ?
+Can we learn data-driven heuristics, competitive with existing man-engineered heuristics ?
 
 ## What is Deep Reinforcement Learning ?
 
-![MarkovDecisionProcess](./GitImg/MDP.png)
+
+<img align="left" img src="./GitImg/MDP.png" width="150">
 
 * Reinforcement Learning: A general purpose framework for Decision Making in a scenario where a learner actively interacts with an environment to achieve a certain goal.
 * Deep Learning: A general purpose framework for Representation Learning
