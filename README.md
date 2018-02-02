@@ -8,9 +8,9 @@ Tensorflow implementation of "Learning Heuristics for the TSP by Policy Gradient
 
 ## Requirements
 
-- [Python 3.5]()
+- [Python 3.5+]()
 - [TensorFlow 1.3.0+](https://www.tensorflow.org/install/)
-- [tqdm](https://pypi.python.org/pypi/tqdm)
+- [Tqdm](https://pypi.python.org/pypi/tqdm)
 
 ## Usage
 
