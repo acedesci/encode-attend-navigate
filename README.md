@@ -75,24 +75,23 @@ One contribution we would like to emphasize here is that simple heuristics can b
 We evaluate on TSP100 our model pre-trained on TSP50 and the results show that that it performs relatively well even though the model was not trained directly on the same instance size as in [Bello & al, 2016]. 
 
 ## Acknowledgments
-[add links]
+I would like to thank: <br/>
+- Ecole Polytechnique (l'X), Polytechnique Montreal and CIRRELT for financial & logistic support <br/>
+- Element AI for hosting weekly meetings <br/>
+- Compute Canada & Télécom Paris-Tech for computational resources <br/>
 
-Ecole Polytechnique (l'X), Polytechnique Montreal and CIRRELT for financial & logistic support
-Element AI for hosting weekly meetings
-Compute Canada & Télécom Paris-Tech for computational resources.
-
-Special thanks (sorted by name)
-Pr. Alessandro Lazaric (SequeL Team, INRIA Lille)
-Dr. Alexandre Lacoste (Element AI)
-Pr. Claudia D'Ambrosio (CNRS, LIX)
-Diane Bernier
-Dr. Khalid Laaziri
-Pr. Leo Liberti (CNRS, LIX)
-Pr. Louis-Martin Rousseau (Polytechnique Montreal)
-Magdalena Fuentes (Télécom Paris-Tech)
-Mehdi Taobane
-Pierre Cournut (Ecole Polytechnique)
-Pr. Yossiri Adulyasak (HEC Montreal)
+Special thanks (sorted by name): <br/>
+- Pr. Alessandro Lazaric (SequeL Team, INRIA Lille) <br/>
+- Dr. Alexandre Lacoste (Element AI) <br/>
+- Pr. Claudia D'Ambrosio (CNRS, LIX) <br/>
+- Diane Bernier <br/>
+- Dr. Khalid Laaziri <br/>
+- Pr. Leo Liberti (CNRS, LIX) <br/>
+- Pr. Louis-Martin Rousseau (Polytechnique Montreal) <br/>
+- Magdalena Fuentes (Télécom Paris-Tech) <br/>
+- Mehdi Taobane <br/>
+- Pierre Cournut (Ecole Polytechnique) <br/>
+- Pr. Yossiri Adulyasak (HEC Montreal) <br/>
 
 
 ## Author
