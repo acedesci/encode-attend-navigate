@@ -37,7 +37,7 @@ Can we learn data-driven heuristics, competitive with existing man-engineered he
 ## What is Deep Reinforcement Learning ?
 
 
-<img align="left" img src="./GitImg/MDP.png" height="180">
+<img align="left" img src="./GitImg/MDP.png" height="190">
 
 * __Reinforcement Learning__: A general purpose framework for Decision Making in a scenario where a learner actively interacts with an environment to achieve a certain goal.
 * __Deep Learning__: A general purpose framework for Representation Learning
@@ -62,7 +62,7 @@ consists in a RNN or self attentive encoder-decoder with an attention module con
 
 ### Neural Decoder
 
-<img align="right" img src="./GitImg/Decoder.png" height="200">
+<img align="left" img src="./GitImg/Decoder.png" height="200">
 
 Similar to [Bello & al., 2016], our Neural Decoder uses a Pointer (cite paper) to effectively point to a city given a trajectory. Our model however explicity forgets after K steps, dispensing with LSTM networks.
 
