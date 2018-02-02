@@ -49,12 +49,12 @@ Our work draws inspiration from [Neural Combinatorial Optimization with Reinforc
 
 ## Architecture
 
-Following [Bello & al., 2016], our Neural Network overall parameterizes a stochastic policy over city permutations. Our model is trained by Policy Gradient ([Reinforce](https://link.springer.com/article/10.1007/BF00992696), 1992) to learn to assign high probability to "good tours", and low probability to "undesirable tours".
+Following [Bello & al., 2016](http://arxiv.org/abs/1611.09940), our Neural Network overall parameterizes a stochastic policy over city permutations. Our model is trained by Policy Gradient ([Reinforce](https://link.springer.com/article/10.1007/BF00992696), 1992) to learn to assign high probability to "good tours", and low probability to "undesirable tours".
 
 ### Neural Encoder
   <img align="left" img src="./GitImg/Encoder.png" height="150">
 
-  Our neural encoder takes inspiration from advances in Neural Machine Translation (cite self attentive...)
+  Our neural encoder takes inspiration from recent advances in [Neural Machine Translation](http://papers.nips.cc/paper/7181-attention-is-all-you-need)
   The purpose of our encoder is to obtain a representation for each action (city) given its context.
 
   The output of our encoder is a set of reference vectors ref = (enc1, ..., encn), each representing a city interacting with other cities. <br/><br/>
@@ -62,19 +62,19 @@ Following [Bello & al., 2016], our Neural Network overall parameterizes a stocha
 ### Neural Decoder
   <img align="left" img src="./GitImg/Decoder.png" height="120">
 
-  Similar to [Bello & al., 2016], our Neural Decoder uses a Pointer (cite paper) to effectively point to a city given a trajectory. Our   model however explicity forgets after K steps, dispensing with LSTM networks. <br/><br/><br/>
+  Similar to [Bello & al., 2016](http://arxiv.org/abs/1611.09940), our Neural Decoder uses a [Pointer](http://papers.nips.cc/paper/5866-pointer-networks) to effectively point to a city given a trajectory. Our model however explicity forgets after K steps, dispensing with LSTM networks. <br/><br/><br/>
 
 ### Local Search
-We use a simple 2-OPT post-processing to clean best sampled tours during test time.
+We use a simple [2-OPT](https://en.wikipedia.org/wiki/2-opt) post-processing to clean best sampled tours during test time.
 One contribution we would like to emphasize here is that simple heuristics can be used in conjunction with Deep Reinforcement Learning, shedding light on interesting hybridization between Artificial Intelligence (AI) & Operations Research (OR).
 
 ## Results
 
 ![tsp100](./GitImg/TSP100.png)
 
-We evaluate on TSP100 our model pre-trained on TSP50 and the results show that that it performs relatively well even though the model was not trained directly on the same instance size as in [Bello & al, 2016]. 
+We evaluate on TSP100 our model pre-trained on TSP50 and the results show that that it performs relatively well even though the model was not trained directly on the same instance size as in [Bello & al, 2016](http://arxiv.org/abs/1611.09940). 
 
-## Acknowledgments
+## Acknowledgments (ref links)
 I would like to thank: <br/>
 - Ecole Polytechnique (l'X), Polytechnique Montreal and CIRRELT for financial & logistic support <br/>
 - Element AI for hosting weekly meetings <br/>
