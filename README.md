@@ -14,21 +14,14 @@ Tensorflow implementation of "Learning Heuristics for the TSP by Policy Gradient
 
 ## Usage
 
-- To train a model from scratch (data is generated on the fly):
+- To train a model from scratch (data is generated on the fly), run blocks 1.DataGenerator, 2.Config, 3.Model and 4.Train with the Jupyter Notebook (Neural_Reinforce.ipynb). You could change parameters in the Config block. Default parameters should replicate results reported in our paper (2D TSP50).
 
-Run blocks 1.DataGenerator, 2.Config, 3.Model and 4.Train with the Jupyter Notebook (Neural_Reinforce.ipynb).
-You could change parameters in the Config block. Default parameters should replicate results reported in our paper (2D TSP50).
-
-- If training is successful, the model will be saved in a "save" folder (file name depends on config) and training statistics will be reported in a "summary" folder.
-
-To visualize training on tensorboard, run:
+- If training is successful, the model will be saved in a "save" folder (file name depends on config) and training statistics will be reported in a "summary" folder. To visualize training on tensorboard, run:
 ```
 > tensorboard --logdir=summary
 ```
 
-- To test a trained model:
-
-Run block 5.Test with the Jupyter Notebook (Neural_Reinforce.ipynb)
+- To test a trained model, run block 5.Test with the Jupyter Notebook (Neural_Reinforce.ipynb)
 
 ## What is Combinatorial Optimization ?
 
